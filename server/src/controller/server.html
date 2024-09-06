@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 10%;
+        }
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    
+        #image {
+            animation: rotate 2s linear infinite;
+        }
+    </style>
+</head>
+<body>
+
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 90vh; width: 100%; overflow: hidden;">
+        <p style="font-weight: 500; color: black; font-size: 20px;">Server is running on port 3000</p>
+        <br> 
+        <img id="image" src="/react.svg" alt="">
+    </div>
+    
+   
+    
+</body>
+</html>

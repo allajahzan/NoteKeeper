@@ -1,0 +1,14 @@
+.card_div{
+    border-radius: 10px;
+   
+}
+
+.container{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0.01rem 0.05rem 1rem 0.2rem #E1E1E1;
+}
+
+.break-words{
+    height: 100px;
+    margin-bottom: 15px;
+}
