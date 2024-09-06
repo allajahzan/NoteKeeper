@@ -22,7 +22,7 @@ app.use(express.urlencoded({extended:true}))
 // use route
 app.use('/', router)
 
-mongoose.connect(process.env.MongoDbUrl as string)
+mongoose.connect('mongodb+srv://allajahzan:Allajpk%40291407@notekeeper.ulp5p.mongodb.net/?retryWrites=true&w=majority&appName=NoteKeeper')
 .then(()=>{
     console.log('Connected to DB')
 })
@@ -31,6 +31,6 @@ mongoose.connect(process.env.MongoDbUrl as string)
 })
 
 // setup server
-app.listen(process.env.PORT, ()=>{
+app.listen(3000, ()=>{
     console.log("Server is running on port 3000 http://localhost:3000")
 })
