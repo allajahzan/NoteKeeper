@@ -177,7 +177,7 @@ function App(): JSX.Element {
             {notes.map((data, index) => {
                 return (<div key={index + data.title} style={{ paddingTop: '2.5rem' }} className="border container border-gray-100 rounded-lg p-8 pb-2 lg:pb-0  relative">
                     <div className="animate-pulse flex">
-                        {/* <div className="rounded-full bg-slate-700 h-10 w-10"></div> */}
+                       
                         <div className="flex-1">
                             <div className="space-y-7">
                                 <div className="grid gap-6 grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
