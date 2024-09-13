@@ -48,7 +48,7 @@ function App(): JSX.Element {
     // get notes from DB
 
     useEffect(() => {
-        fetch('http://localhost:3000/getNote')
+        fetch('https://mynoteskeeper-server.vercel.app/getNote')
             .then(async (res) => {
                 return await res.json()
             })
@@ -71,7 +71,7 @@ function App(): JSX.Element {
 
     let addNoteFunction = (note: Type) => {
 
-        fetch('http://localhost:3000/addNote', {
+        fetch('https://mynoteskeeper-server.vercel.app/addNote', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -95,7 +95,7 @@ function App(): JSX.Element {
     // delete note
 
     let deleteNoteFunction = (_id: object) => {
-        fetch(`http://localhost:3000/deleteNote?_id=${_id}`, {
+        fetch(`https://mynoteskeeper-server.vercel.app/deleteNote?_id=${_id}`, {
             method: 'DELETE',
         })
             .then(async (res) => {
@@ -126,7 +126,7 @@ function App(): JSX.Element {
 
     let editNoteFunction = (note: Type) => {
 
-        fetch('http://localhost:3000/editNote', {
+        fetch('https://mynoteskeeper-server.vercel.app/editNote', {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'
