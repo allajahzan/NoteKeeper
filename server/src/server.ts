@@ -34,3 +34,5 @@ mongoose.connect('mongodb+srv://allajahzan:Allajpk%40291407@notekeeper.ulp5p.mon
 app.listen(3000, ()=>{
     console.log("Server is running on port 3000 http://localhost:3000")
 })
+
+export default app
